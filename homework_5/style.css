@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    position: relative;
+}
+
+.header-wrapper {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #590BFF;
+    line-height: 2em;
+    z-index: 4;
+    
+}
+.header-heading {
+    font-size: large;
+    font-weight: bold;
+    color: aliceblue;
+}
+.header-alphabet {
+    margin-bottom: 15px;
+}
+.header-alphabet a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px;
+}
+.header-alphabet a:visited {
+    color: #FF710B;
+    outline: solid 1px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.aside {
+    position: absolute;
+    top: 20%;
+    margin: 15px;
+}
+.aside__wrapper {
+    background-color:rgb(249, 218, 207);
+    border-radius: 20px;
+    width: auto;
+    margin: 0;
+    padding: 10px;
+}
+.aside__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.aside__list a {
+    font-style: normal;
+    text-decoration-line: underline;
+    color: #FF710B;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 5px;
+}
+.sections-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 75%;
+    z-index: 1;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.list__item-letter {
+    position: sticky;
+    background-color: #844dfb;
+    width: auto;
+    top: 130px;
+    z-index: 3;
+    border-radius: 10px;
+    font-weight: bald;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.list__item-surname {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    
+}
+.footer__main {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    background-color: #590BFF;
+    color: black;
+    text-align: center;
+}
