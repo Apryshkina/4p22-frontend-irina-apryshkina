@@ -6,10 +6,6 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header {
-    position: relative;
-}
-
 .header-wrapper {
     position: fixed;
     width: 100%;
