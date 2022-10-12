@@ -46,8 +46,9 @@
         </aside>
         <div class="sections-wrapper">
             <section class="list">
-            <div class="list__wrapper">
-                <div class="list__item" id="a">
+                <div class="list__item" id="a"></div>
+                <div class="list__wrapper">
+               
                     <h3 class="list__item-letter">a</h3>
                     <ul class="list__item-cintent">
                     <li class="list__item-surname">Абабков</li>
@@ -60,12 +61,11 @@
                     <li class="list__item-surname">Абалкин</li>
                     <li class="list__item-surname">Абрикосов</li>
                     <li class="list__item-surname">Агаев</li></ul>
-                </div>
             </div>
         </section>
         <section class="list">
             <div class="list__wrapper">
-                <div class="list__item" id="б">
+                <div class="list__item" id="б"></div>
                     <h3 class="list__item-letter">б</h3>
                     <ul class="list__item-cintent">
                     <li class="list__item-surname">Бабаджанов</li>
@@ -78,7 +78,6 @@
                     <li class="list__item-surname">Бабарыкин</li>
                     <li class="list__item-surname">Багров</li>
                     <li class="list__item-surname">Багаев</li></ul>
-                </div>
             </div>
         </section>
         <section class="list">
@@ -100,8 +99,8 @@
             </div>
         </section>
         <section class="list">
+            <div class="list__item" id="г"></div>
             <div class="list__wrapper">
-                <div class="list__item" id="г">
                     <h3 class="list__item-letter">г</h3>
                     <ul class="list__item-cintent">
                     <li class="list__item-surname">Габбасов </li>
@@ -114,7 +113,7 @@
                     <li class="list__item-surname">Гаваев </li>
                     <li class="list__item-surname">Гавердовский </li>
                     <li class="list__item-surname">Гавренев </li></ul>
-                </div>
+                
             </div>
         </section>
         <section class="list">
@@ -308,6 +307,23 @@
             </div>
         </section></div>
     </main>
+
+    <script>
+        const anchors = document.querySelectorAll("a");
+        const headers = document.querySelectorAll("h3");
+
+        anchors.forEach((anchor) => {
+            anchor.addEventListener("click", (e) => {
+                headers.forEach((header) => {
+                    console.log(123);
+                    header.style.position = "static";
+                    setTimeout(() => {
+                        header.style.position = "sticky";
+                    }, 1);
+                });
+            });
+        });
+    </script>
     <footer class="footer">
         <div class="footer__main">
             <p class="footer__text">Тут футер</p>
