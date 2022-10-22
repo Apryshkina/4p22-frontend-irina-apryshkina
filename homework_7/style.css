@@ -72,7 +72,6 @@ body {
 }
 .form-content__input:focus {
     outline: 3px ridge rgba(140, 188, 230, 0.6);
-    border-radius: 1rem;
     background-color: #d1eff8;
 }
 
@@ -110,6 +109,7 @@ body {
     content: '';
     background: url(./img/check.svg);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .form-content__button-container {
