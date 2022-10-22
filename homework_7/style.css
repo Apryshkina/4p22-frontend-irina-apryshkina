@@ -11,7 +11,7 @@ body {
 
 .form-container {
     width: calc(600 / 1440 * 100vw);
-    height: calc(412 / 1440 * 100vw);
+    min-height: calc(412 / 1440 * 100vh);
     margin-top: calc(82 / 1440 * 100vh);
     margin-bottom: calc(20 / 1440 * 100vh);
     background-color: #FFFFFF;
@@ -137,4 +137,62 @@ body {
     background: #2555c3;
     font-weight: 700;
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .form-container {
+        width: calc(728 / 768 * 100vw);
+        height: calc(697 / 768 * 100vh);
+        margin: calc(20 / 768 * 100vw);
+        background-color: #FFFFFF;
+    }
+
+    .form-content {
+        margin: calc(38 / 768 * 100vw) calc(45 / 768 * 100vw)
+    }
+
+    .form-heading {
+        font-size: calc(60 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+        /* margin-bottom: 16px; */
+        padding: 0;
+    }
+
+    .form-content__label {
+        font-size: calc(24 / 768 * 100vw);
+        padding: calc(8 / 768 * 100vw);
+    }
+
+    .form-content__input {
+        height: calc(49 / 768 * 100vh);
+        padding: calc(20 / 768 * 100vw) calc(15 / 768 * 100vw);
+    
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+    }
+
+    .form-content__checkbox {
+        margin-top: calc(19 / 768 * 100vw);
+    }
+
+    .form-content__label-checkbox {
+        font-size: calc(18 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        margin-left: calc(50 / 768 * 100vw)
+    }
+    
+    .form-content__label-checkbox::before {
+        width: calc(32 / 768 * 100vw);
+        height: calc(32 / 768 * 100vh);
+        border-radius: calc(7 / 768 * 100vw); 
+    }
+    .form-content__button-container {
+        margin-top: calc(64 / 768 * 100vw);
+    }
+    
+    .form-content__button {
+        min-width: calc(220 / 768 * 100vw);
+        height: calc(80 / 768 * 100vh);
+        font-size: calc(32 / 768 * 100vw);
+    }
 }
