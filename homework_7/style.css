@@ -104,7 +104,10 @@ body {
     height: calc(24 / 1440 * 100vw);
     border: 2px solid #787878;
     border-radius: calc(7 / 1440 * 100vh); 
+    top: 50%;
+    transform: translateY(-50%); 
 }
+
 .form-content__input-checkbox:checked + .form-content__label-checkbox::before {
     content: '';
     background: url(./img/check.svg);
@@ -183,7 +186,7 @@ body {
     
     .form-content__label-checkbox::before {
         width: calc(32 / 768 * 100vw);
-        height: calc(32 / 768 * 100vh);
+        height: calc(32 / 768 * 100vw);
         border-radius: calc(7 / 768 * 100vw); 
     }
     .form-content__button-container {
