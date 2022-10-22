@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./fonts.css">
+</head>
+<body>
+    <div class="form-container">
+        <form class="form-content" action="/action_page.html" method="get">
+            <h1 class="form-heading">Вход</h1>
+            <!-- емаил -->
+            <div class="form-content__email">
+                <label class="form-content__label">Email</label>
+                <input class="form-content__input" type="text" name="email" placeholder="Введите email">
+            </div>
+            <!-- пароль -->
+            <div class="form-content__password">
+                <label class="form-content__label">Пароль</label>
+                <input class="form-content__input" type="password" name="userpassword" placeholder="Введите пароль">
+            </div>
+            <!-- Чекбокс -->
+            <div class="form-content__checkbox">
+                <input class="form-content__input-checkbox" id="checkbox" type="checkbox" name="subscribe" value="yes" required>
+                <!-- <div class="form-checkbox__box"></div> удалить-->
+                <label class="form-content__label-checkbox" for="checkbox">Я согласен получать обновления на почту</label>
+            </div> 
+            <!-- кнопка -->
+            <div class="form-content__button-container">
+                <button class="form-content__button" type="submit">Войти</button>
+            </div>
+          </form>
+    </div>  
+</body>
+</html>
