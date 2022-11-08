@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ирина Апрышкина">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="Homework_8: calculator">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="shortcut icon" href="./img/icon-calculator.png" type="image/x-icon">
+</head>
+<body> 
+    <div class="container">
+
+        <div class="container__heading">
+            <h2>Упрощенный калькулятор</h2>
+        </div>
+
+        <form class="container-form" action="#">
+
+            <label class="container-form__first-number-label" for="first-number">Первое число</label>
+            <input class="container-form__first-number-input" id="first-number" name="first-number" placeholder="Введите первое число" autocomplete="off">
+            
+            <label class="container-form__operation-label" for="operation">Знак операции</label>
+            <input class="container-form__operation-input" id="operation" name="operation" placeholder="Введите знак операции (+, -, /, *)" autocomplete="off" maxlength="1">
+            
+            <label class="container-form__second-number-label" for="second-number">Второе число</label>
+            <input class="container-form__second-number-input" id="second-number" name="second-number" placeholder="Введите второе число" autocomplete="off">
+            
+            <button class="container-form__button" id="submit">Результат:</button>
+
+        </form>
+
+        <div class="container-form__output" id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
